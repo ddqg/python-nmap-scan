@@ -32,7 +32,7 @@ scanner = nmap.PortScanner()
 
 ip = str(input("Target IP: "))
 
-scan_args = '-A -T4 -v'
+scan_args = '-A -T4 -vv'
 
 print(f"Starting Nmap scan on {ip} for ports 1 to 65535...")
 scanner.scan(ip, '1-65535', arguments=scan_args)
