@@ -32,9 +32,9 @@ scanner = nmap.PortScanner()
 
 ip = str(input("Target IP: "))
 
-scan_args = '-A -T4 -vv'
+scan_args = input("Scan arguments : ")
 
-print(f"Starting Nmap scan on {ip} for ports 1 to 65535...")
+print(f"Starting Nmap scan on {ip} for ports 1 to 65535 {scan_args}...")
 scanner.scan(ip, '1-65535', arguments=scan_args)
 
 for host in scanner.all_hosts():
