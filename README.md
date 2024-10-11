@@ -1,3 +1,1 @@
-A short Python script to do an nmap scan
-
-the default parameter are -A -T4 -vv
+A short python script to do an nmap scan created using the python-nmap library
